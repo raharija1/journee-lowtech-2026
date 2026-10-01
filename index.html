@@ -217,8 +217,23 @@ h2 {
     margin-top: 13px;
     padding-top: 11px;
     border-top: 1px solid #e7ebe9;
-    font-weight: bold;
+}
+
+.talk-label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--grey);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.talk-name {
+    display: block;
     font-size: 0.95rem;
+    font-weight: bold;
+    line-height: 1.3;
+    color: var(--green-dark);
 }
 
 /* ---------- MADAGASCAR ---------- */
@@ -243,7 +258,7 @@ h2 {
 
 .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 18px;
     margin-top: 22px;
 }
@@ -345,6 +360,10 @@ footer {
 .footer-small {
     opacity: 0.7;
     font-size: 0.82rem;
+}
+
+.event-detail + .event-detail {
+    margin-top: 5px;
 }
 
 /* ---------- MOBILE ---------- */
@@ -497,9 +516,11 @@ footer {
                 <div class="affiliation">
                     INSA Strasbourg / Laboratoire ICube
                 </div>
-
                 <div class="talk-title">
-                    Titre de l'intervention
+                <span class="talk-label">Titre de l'intervention</span>
+                <span class="talk-name">
+                
+                </span>
                 </div>
 
             </article>
@@ -518,7 +539,11 @@ footer {
                 </div>
 
                 <div class="talk-title">
-                    Titre de l'intervention
+                <span class="talk-label">Titre de l'intervention</span>
+                <span class="talk-name">
+                Conception low-tech : état des lieux, caractéristiques,
+                intérêts et mise en œuvre
+                </span>
                 </div>
 
             </article>
@@ -536,8 +561,11 @@ footer {
                     Université Picardie Jules Verne / Laboratoire des Tehnologies Innovantes
                 </div>
 
-                <div class="talk-title">
-                    Titre de l'intervention
+               <div class="talk-title">
+                <span class="talk-label">Titre de l'intervention</span>
+                <span class="talk-name">
+               
+                </span>
                 </div>
 
             </article>
@@ -562,39 +590,71 @@ footer {
         <h2>France × Madagascar</h2>
 
         <p class="madagascar-intro">
-            Une séquence en visioconférence sera consacrée aux projets
-            développés en collaboration avec
-            <strong>l'École Polytechnique d'Antsiranana</strong>
-            à Madagascar.
+            Trois projets développés en collaboration avec
+            <strong>l'École Supérieure Polytechnique d'Antsiranana</strong>
+            seront présentés en visioconférence. Ils explorent trois approches
+            complémentaires du développement durable à Madagascar :
+            conception low-tech, énergies renouvelables et matériaux biosourcés.
         </p>
 
         <div class="projects">
 
+            <!-- PROJET 1 -->
+
             <article class="project">
 
                 <div class="project-number">
-                    Projet 01 · En direct de Madagascar
+                    Projet 01 · Robotique agricole
                 </div>
 
-                <h3>Titre du projet</h3>
+                <h3>
+                    Robot terrestre autonome
+                </h3>
 
                 <p>
-                    Présentation du projet et de l'équipe.
+                    Conception d'un robot agricole sous contraintes de ressources :
+                    vers une approche low-tech pour l'agriculture durable à Madagascar.
                 </p>
 
             </article>
 
 
+            <!-- PROJET 2 -->
+
             <article class="project">
 
                 <div class="project-number">
-                    Projet 02 · En direct de Madagascar
+                    Projet 02 · Énergies renouvelables
                 </div>
 
-                <h3>Titre du projet</h3>
+                <h3>
+                    Plateforme expérimentale d'énergies renouvelables
+                </h3>
 
                 <p>
-                    Présentation du projet et de l'équipe.
+                    Production, stockage et supervision de l'énergie :
+                    une plateforme expérimentale pour les énergies renouvelables
+                    à Madagascar.
+                </p>
+
+            </article>
+
+
+            <!-- PROJET 3 -->
+
+            <article class="project">
+
+                <div class="project-number">
+                    Projet 03 · Matériaux biosourcés
+                </div>
+
+                <h3>
+                    MadaBioMat
+                </h3>
+
+                <p>
+                    Développement de matériaux biosourcés à partir
+                    de ressources locales à Madagascar.
                 </p>
 
             </article>
@@ -625,7 +685,7 @@ footer {
 
         <div class="programme">
 
-            <div class="programme-item">
+    <div class="programme-item">
         <div class="time">09h30</div>
         <div>
             <div class="event-title">Accueil café</div>
@@ -637,7 +697,7 @@ footer {
         <div>
             <div class="event-title">Ouverture de la journée</div>
             <div class="event-detail">
-                Présentation de la thématique et des objectifs
+                Présentation de la thématique et des objectifs de la journée
             </div>
         </div>
     </div>
@@ -647,42 +707,61 @@ footer {
         <div>
             <div class="event-title">Conférence invitée 1</div>
             <div class="event-detail">
-                Strasbourg · Titre et intervenant à préciser
+                Marc VEDRINES (Strasbourg) · 30 min de présentation + 10 min d'échanges
             </div>
         </div>
     </div>
 
     <div class="programme-item">
-        <div class="time">11h00</div>
+        <div class="time">10h55</div>
         <div>
             <div class="event-title">Conférence invitée 2</div>
             <div class="event-detail">
-                Nancy · Titre et intervenant à préciser
+                Clément Colin (Nancy) · 30 min de présentation + 10 min d'échanges
             </div>
         </div>
     </div>
 
     <div class="programme-item">
-        <div class="time">11h45</div>
+        <div class="time">11h35</div>
         <div>
             <div class="event-title">Échanges et discussion</div>
+            <div class="event-detail">
+                Discussion avec les intervenants et les participants
+            </div>
         </div>
     </div>
 
     <div class="programme-item">
-        <div class="time">12h15</div>
+        <div class="time">12h00</div>
         <div>
             <div class="event-title">Déjeuner</div>
         </div>
     </div>
 
+
+    <!-- SÉQUENCE MADAGASCAR -->
+
     <div class="programme-item">
         <div class="time">13h30</div>
         <div>
-            <div class="event-title">Coopération France – Madagascar</div>
+            <div class="event-title">
+                Coopération France – Madagascar
+            </div>
+
             <div class="event-detail">
-                Mot introductif de la Directrice de l'École Supérieure
-                Polytechnique d'Antsiranana
+                Mot introductif de Mme Hasina ANDRIANINA,
+                Directrice de l'École Supérieure Polytechnique d'Antsiranana
+            </div>
+
+            <div class="event-detail">
+                Mot introductif de Mme Odette FOKAPU,
+                Présidente de
+                <a href="https://diasporeines.org/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Diasporeines Africa
+                </a>
             </div>
         </div>
     </div>
@@ -690,73 +769,108 @@ footer {
     <div class="programme-item">
         <div class="time">13h40</div>
         <div>
-            <div class="event-title">Projet Madagascar 1</div>
+            <div class="event-title">
+                Projet 1 · Robot terrestre autonome
+            </div>
             <div class="event-detail">
-                Présentation en visioconférence · Titre à préciser
+                Concevoir un robot agricole sous contraintes de ressources :
+                vers une approche low-tech pour l'agriculture durable à Madagascar
+                · 15 min
             </div>
         </div>
     </div>
 
     <div class="programme-item">
-        <div class="time">14h05</div>
+        <div class="time">13h55</div>
         <div>
-            <div class="event-title">Projet Madagascar 2</div>
+            <div class="event-title">
+                Projet 2 · Plateforme expérimentale d'énergies renouvelables
+            </div>
             <div class="event-detail">
-                Présentation en visioconférence · Titre à préciser
+                Produire, stocker et superviser l'énergie :
+                une plateforme expérimentale pour les énergies renouvelables
+                à Madagascar · 15 min
             </div>
         </div>
     </div>
 
     <div class="programme-item">
-        <div class="time">14h30</div>
+        <div class="time">14h10</div>
+        <div>
+            <div class="event-title">
+                Projet 3 · MadaBioMat
+            </div>
+            <div class="event-detail">
+                Développement de matériaux biosourcés à partir
+                de ressources locales à Madagascar · 15 min
+            </div>
+        </div>
+    </div>
+
+    <div class="programme-item">
+        <div class="time">14h25</div>
+        <div>
+            <div class="event-title">
+                Échanges autour des projets Madagascar
+            </div>
+            <div class="event-detail">
+                Discussion avec les équipes et les participants
+            </div>
+        </div>
+    </div>
+
+    <div class="programme-item">
+        <div class="time">14h40</div>
         <div>
             <div class="event-title">Pause café</div>
         </div>
     </div>
 
+
+    <!-- APRÈS-MIDI -->
+
     <div class="programme-item">
-        <div class="time">14h45</div>
+        <div class="time">15h00</div>
         <div>
             <div class="event-title">Conférence invitée 3</div>
             <div class="event-detail">
-                Amiens · Titre et intervenant à préciser
+                Geoffrey PROMIS (Amiens) · 30 min de présentation + 10 min d'échanges
             </div>
         </div>
     </div>
 
     <div class="programme-item">
-        <div class="time">15h30</div>
+        <div class="time">15h40</div>
         <div>
-            <div class="event-title">Table ronde et échanges</div>
+            <div class="event-title">
+                Discussion générale et table ronde
+            </div>
             <div class="event-detail">
-                Low-Tech et technologies durables : recherche, formation et coopérations
+                Low-Tech et technologies durables :
+                recherche, formation et coopérations
             </div>
         </div>
     </div>
 
     <div class="programme-item">
-        <div class="time">16h30</div>
+        <div class="time">16h40</div>
         <div>
-            <div class="event-title">Discussion et perspectives</div>
-        </div>
-    </div>
-
-    <div class="programme-item">
-        <div class="time">16h50</div>
-        <div>
-            <div class="event-title">Conclusion de la journée</div>
+            <div class="event-title">
+                Conclusion et perspectives
+            </div>
         </div>
     </div>
 
     <div class="programme-item">
         <div class="time">17h00</div>
         <div>
-            <div class="event-title">Fin de la journée</div>
+            <div class="event-title">
+                Fin de la journée
+            </div>
         </div>
     </div>
-        </div>
 
-    </div>
+</div>
 
 </section>
 
