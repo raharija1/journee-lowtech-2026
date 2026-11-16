@@ -315,7 +315,7 @@ h2 {
 
 .programme-item {
     display: grid;
-    grid-template-columns: 95px 1fr;
+    grid-template-columns: 75px 1fr;
     padding: 9px 0;
     border-bottom: 1px solid #e0e5e2;
 }
@@ -422,11 +422,15 @@ footer {
         padding: 32px 18px;
     }
 
-   .programme-item {
+.programme-item {
     display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 20px;
+    grid-template-columns: 75px 1fr;
+    column-gap: 10px;
     align-items: start;
+}
+
+.programme-item .time {
+    white-space: nowrap;
 }
 }
 
